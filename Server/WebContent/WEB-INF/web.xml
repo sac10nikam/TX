@@ -11,16 +11,6 @@
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>Index</display-name>
-    <servlet-name>Index</servlet-name>
-    <servlet-class>test.Index</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>Index</servlet-name>
-    <url-pattern>/Index</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>Hl7_listener</display-name>
     <servlet-name>Hl7_listener</servlet-name>
     <servlet-class>srv.Hl7_listener</servlet-class>
