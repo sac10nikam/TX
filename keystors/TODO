@@ -1,8 +1,6 @@
- 943  cd keystors/
-  944  ll
-  945  keytool -genkey -alias tomcat -keyalg rsa -validity 3660 -keystore .keystore
-  946  ll
-  947  keytool -export -alias tomcat -keystore .keystore -rfc -file public.cert
-  948  ll
-  949  keytool -import -alias tomcat -file public.cert -keystore .truststore
+cd keystors/
+keytool -genkey -alias tomcat -keyalg rsa -validity 3660 -keystore .keystore -keysize 2048 -storepass e-Care
+keytool -export -alias tomcat -keystore .keystore -rfc -file public.cert
+keytool -import -alias tomcat -file public.cert -keystore .truststore
+rm public.cert
 
