@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
@@ -18,10 +19,14 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		final Button sendButton = (Button) findViewById(R.id.Send_button);
+		final TextView txt = (TextView) findViewById(R.id.textView1);
+		
 		OnClickListener lis = new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
+				txt.setText("MSH|^~\\&|||||20130113141158.06+0100||ACK^R01|5|6428|2.6\nMSA|AA|110");
+				/*
 				try {
 					GenMessages mess = new GenMessages();
 					Integer[] val = {27, 34, 36};
@@ -34,7 +39,7 @@ public class MainActivity extends Activity {
 					e.printStackTrace();
 				} catch (IOException e) {
 					e.printStackTrace();
-				}				
+				}				//*/
 			}
 		};
 		sendButton.setOnClickListener(lis);
