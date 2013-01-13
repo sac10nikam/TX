@@ -3,7 +3,6 @@ package exec;
 import java.io.IOException;
 
 import ca.uhn.hl7v2.HL7Exception;
-import testTools.GenMessages;
 
 public class Main {
 	public static void main(String[] args) {
