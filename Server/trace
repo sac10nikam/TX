@@ -1,0 +1,166 @@
+19:31:49,578  INFO [http-8443-1] VersionLogger:35 - HAPI version is: 2.0
+19:31:49,584 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.1
+19:31:49,584 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.2
+19:31:49,585 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.3
+19:31:49,585 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.3.1
+19:31:49,586 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.4
+19:31:49,586 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.5
+19:31:49,586 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.5.1
+19:31:49,587 DEBUG [http-8443-1] DefaultModelClassFactory:283 - No user-defined packages for version 2.6
+19:31:49,609  INFO [http-8443-1] VersionLogger:35 - HL7 over HTTP (HAPI) library version is: 2.1-alpha1
+19:31:49,610 DEBUG [http-8443-1] AbstractHl7OverHttpDecoder:93 - Headers are: {content-type=application/hl7-v2; charset=UTF-8, content-length=386, accept-encoding=gzip, user-agent=HAPI (HL7 over HTTP) Client 2.1-alpha1, host=localhost:8443, date=dim., 13 janv. 13 19:31:49 CET}
+19:31:49,613 DEBUG [http-8443-1] AbstractHl7OverHttpDecoder:86 - Message is 386 bytes with charset UTF-8
+19:31:49,613 DEBUG [http-8443-1] HohRawServlet:87 - Message charset is UTF-8
+19:31:49,619  INFO [http-8443-1] ApplicationRouterImpl:97 - ApplicationRouterImpl got message: MSH|^~\&|||||20130113193148.703+0100||ORU^R01^ORU_R01|111|2321|2.6
+OBR|9101||a711442b-8e30-4463-aa38-0f3d6e432dad^MEASUR|E-Care
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure1|27
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure2|34
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure3|36
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure1|29
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure2|39
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure3|42
+19:31:49,619  INFO [http-8443-1] inbound:98 - MSH|^~\&|||||20130113193148.703+0100||ORU^R01^ORU_R01|111|2321|2.6
+OBR|9101||a711442b-8e30-4463-aa38-0f3d6e432dad^MEASUR|E-Care
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure1|27
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure2|34
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure3|36
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure1|29
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure2|39
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure3|42
+19:31:49,622 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.message.ORU_R01
+19:31:49,644 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.message.ORU_R01 class: class ca.uhn.hl7v2.model.v26.message.ORU_R01
+19:31:49,644 DEBUG [http-8443-1] Parser:582 - Instantiating msg of class ca.uhn.hl7v2.model.v26.message.ORU_R01
+19:31:49,749 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment MSH
+19:31:49,749 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction MSH
+19:31:49,749 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: Root:ORU_R01(-1)
+19:31:49,750 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORU_R01:MSH(-1)
+19:31:49,750 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction MSH
+19:31:49,753 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,754 DEBUG [http-8443-1] PipeParser:346 - Parsing field 7 repetition 0
+19:31:49,756 DEBUG [http-8443-1] PipeParser:346 - Parsing field 9 repetition 0
+19:31:49,757 DEBUG [http-8443-1] PipeParser:346 - Parsing field 10 repetition 0
+19:31:49,758 DEBUG [http-8443-1] PipeParser:346 - Parsing field 11 repetition 0
+19:31:49,758 DEBUG [http-8443-1] PipeParser:346 - Parsing field 12 repetition 0
+19:31:49,759 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBR
+19:31:49,759 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBR
+19:31:49,759 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORU_R01:MSH(0)
+19:31:49,760 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORU_R01:SFT(-1)
+19:31:49,760 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORU_R01:UAC(-1)
+19:31:49,760 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORU_R01:PATIENT_RESULT(-1)
+19:31:49,761 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: PATIENT_RESULT:PATIENT(-1)
+19:31:49,761 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: PATIENT_RESULT:ORDER_OBSERVATION(-1)
+19:31:49,761 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:ORC(-1)
+19:31:49,762 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBR(-1)
+19:31:49,762 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBR
+19:31:49,763 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,763 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,764 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,764 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBX
+19:31:49,764 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,764 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBR(0)
+19:31:49,765 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:NTE(-1)
+19:31:49,765 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:ROL(-1)
+19:31:49,765 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:TIMING_QTY(-1)
+19:31:49,765 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:CTD(-1)
+19:31:49,766 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBSERVATION(-1)
+19:31:49,766 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(-1)
+19:31:49,766 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,766 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,767 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,767 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,767 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,767 DEBUG [http-8443-1] PipeParser:346 - Parsing field 5 repetition 0
+19:31:49,769 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,769 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.datatype.TX class: class ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,770 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBX
+19:31:49,770 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,771 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(0)
+19:31:49,771 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:NTE(-1)
+19:31:49,771 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBSERVATION(0)
+19:31:49,771 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(-1)
+19:31:49,772 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,772 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,772 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,773 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,773 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,773 DEBUG [http-8443-1] PipeParser:346 - Parsing field 5 repetition 0
+19:31:49,774 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,774 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.datatype.TX class: class ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,774 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBX
+19:31:49,774 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,775 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(0)
+19:31:49,775 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:NTE(-1)
+19:31:49,775 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBSERVATION(1)
+19:31:49,775 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(-1)
+19:31:49,775 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,776 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,776 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,776 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,777 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,777 DEBUG [http-8443-1] PipeParser:346 - Parsing field 5 repetition 0
+19:31:49,777 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,778 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.datatype.TX class: class ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,778 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBX
+19:31:49,778 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,779 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(0)
+19:31:49,779 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:NTE(-1)
+19:31:49,779 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBSERVATION(2)
+19:31:49,779 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(-1)
+19:31:49,780 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,780 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,780 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,781 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,781 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,781 DEBUG [http-8443-1] PipeParser:346 - Parsing field 5 repetition 0
+19:31:49,782 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,782 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.datatype.TX class: class ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,782 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBX
+19:31:49,783 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,783 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(0)
+19:31:49,783 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:NTE(-1)
+19:31:49,783 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBSERVATION(3)
+19:31:49,784 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(-1)
+19:31:49,784 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,785 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,785 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,785 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,786 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,786 DEBUG [http-8443-1] PipeParser:346 - Parsing field 5 repetition 0
+19:31:49,786 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,786 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.datatype.TX class: class ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,787 DEBUG [http-8443-1] PipeParser:1106 - Parsing segment OBX
+19:31:49,787 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,787 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(0)
+19:31:49,787 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:NTE(-1)
+19:31:49,788 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: ORDER_OBSERVATION:OBSERVATION(4)
+19:31:49,788 DEBUG [http-8443-1] MessageIterator:101 - hasNext() current position: OBSERVATION:OBX(-1)
+19:31:49,788 DEBUG [http-8443-1] MessageIterator:92 - hasNext() for direction OBX
+19:31:49,789 DEBUG [http-8443-1] PipeParser:346 - Parsing field 1 repetition 0
+19:31:49,789 DEBUG [http-8443-1] PipeParser:346 - Parsing field 2 repetition 0
+19:31:49,789 DEBUG [http-8443-1] PipeParser:346 - Parsing field 3 repetition 0
+19:31:49,789 DEBUG [http-8443-1] PipeParser:346 - Parsing field 4 repetition 0
+19:31:49,790 DEBUG [http-8443-1] PipeParser:346 - Parsing field 5 repetition 0
+19:31:49,790 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,790 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.datatype.TX class: class ca.uhn.hl7v2.model.v26.datatype.TX
+19:31:49,795 DEBUG [http-8443-1] ApplicationRouterImpl:123 - Sending message to application: srv.Hl7_listener$MyApplication@4ce63606
+Received message:
+MSH|^~\&|||||20130113193148.703+0100||ORU^R01^ORU_R01|111|2321|2.6
+OBR|9101||a711442b-8e30-4463-aa38-0f3d6e432dad^MEASUR|E-Care
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure1|27
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure2|34
+OBX|1|TX|21:27:45:67:58:65:f7|Pressure3|36
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure1|29
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure2|39
+OBX|2|TX|69:27:45:67:58:65:f7|Pressure3|42
+19:31:49,803 DEBUG [http-8443-1] DefaultModelClassFactory:332 - Trying to load: ca.uhn.hl7v2.model.v26.message.ACK
+19:31:49,813 DEBUG [http-8443-1] DefaultModelClassFactory:336 - Loaded: ca.uhn.hl7v2.model.v26.message.ACK class: class ca.uhn.hl7v2.model.v26.message.ACK
+19:31:49,821  INFO [http-8443-1] Home:47 - hapi.home is set to /home/leo/Téléchargements/eclipse/.
+19:31:49,822 DEBUG [http-8443-1] Terser:378 - Setting /MSH-9-1 seg: MSH ind: 9 0 1 1
+19:31:49,823 DEBUG [http-8443-1] Terser:378 - Setting /MSH-9-2 seg: MSH ind: 9 0 2 1
+19:31:49,823 DEBUG [http-8443-1] Terser:378 - Setting /MSH-12 seg: MSH ind: 12 0 1 1
+19:31:49,824 DEBUG [http-8443-1] Terser:378 - Setting /MSA-1 seg: MSA ind: 1 0 1 1
+19:31:49,824 DEBUG [http-8443-1] Terser:378 - Setting /MSA-2 seg: MSA ind: 2 0 1 1
+19:31:49,827  INFO [http-8443-1] ApplicationRouterImpl:137 - ApplicationRouterImpl sending message: MSH|^~\&|||||20130113193149.816+0100||ACK^R01|6|2321|2.6
+MSA|AA|111
+19:31:49,827  INFO [http-8443-1] outbound:138 - MSH|^~\&|||||20130113193149.816+0100||ACK^R01|6|2321|2.6
+MSA|AA|111

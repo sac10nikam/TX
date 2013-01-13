@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				txt.setText("MSH|^~\\&|||||20130113141158.06+0100||ACK^R01|5|6428|2.6\nMSA|AA|110");
-				/*
+				//*
 				try {
 					GenMessages mess = new GenMessages();
 					Integer[] val = {27, 34, 36};

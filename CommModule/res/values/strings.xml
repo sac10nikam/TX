@@ -2,8 +2,7 @@
 <resources>
 
     <string name="app_name">CommModule</string>
-    <string name="hello_world">HelloWorld</string>
+    <string name="hello_world">Hello World</string>
     <string name="send">Send</string>
     <string name="menu_settings">Settings</string>
-
 </resources>

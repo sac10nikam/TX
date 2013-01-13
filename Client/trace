@@ -1,0 +1,26 @@
+19:31:48,669  INFO [main] VersionLogger:35 - HAPI version is: 2.0
+19:31:48,677 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.1
+19:31:48,679 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.2
+19:31:48,681 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.3
+19:31:48,681 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.3.1
+19:31:48,682 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.4
+19:31:48,682 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.5
+19:31:48,682 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.5.1
+19:31:48,683 DEBUG [main] DefaultModelClassFactory:283 - No user-defined packages for version 2.6
+19:31:48,708  INFO [main] Home:47 - hapi.home is set to /home/leo/workspace/TX/Client/.
+19:31:48,821 DEBUG [main] HohRawClientSimple:116 - Creating new connection to localhost:8443 for URI /Server/Hl7_listener
+19:31:49,047  INFO [main] VersionLogger:35 - HL7 over HTTP (HAPI) library version is: 2.1-alpha1
+19:31:49,052 DEBUG [main] HohRawClientSimple:184 - Writing message to OutputStream
+19:31:49,065 DEBUG [main] AbstractHl7OverHttpEncoder:134 - Writing HTTP action: POST /Server/Hl7_listener HTTP/1.1
+19:31:49,184 DEBUG [main] HohRawClientSimple:188 - Reading response from OutputStream
+19:31:49,687 DEBUG [main] HohRawClientSimple:205 - No message received yet
+19:31:49,830 DEBUG [main] AbstractHl7OverHttpDecoder:453 - Read action line: HTTP/1.1 200 OK
+19:31:49,831 DEBUG [main] AbstractHl7OverHttpDecoder:205 - Decoding message bytes using CHUNKED encoding style
+19:31:49,831 DEBUG [main] AbstractHl7OverHttpDecoder:228 - Next CHUNKED size: 68
+19:31:49,832 DEBUG [main] AbstractHl7OverHttpDecoder:248 - Read 68 byte chunk
+19:31:49,832 DEBUG [main] AbstractHl7OverHttpDecoder:86 - Message is 68 bytes with charset UTF-8
+19:31:49,841 DEBUG [main] HohRawClientSimple:107 - Closing socket
+MSH|^~\&|||||20130113193149.816+0100||ACK^R01|6|2321|2.6
+MSA|AA|111
+null
+
