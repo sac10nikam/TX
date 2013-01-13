@@ -12,18 +12,13 @@ import ca.uhn.hl7v2.model.Message;
 import ca.uhn.hl7v2.protocol.ReceivingApplication;
 import ca.uhn.hl7v2.protocol.ReceivingApplicationException;
 
-public class Hl7_listener extends HohServlet {
-	
-	
-	
+public class Hl7_listener extends HohServlet {	
 	
 	private static final long serialVersionUID = 1L;
-	
 	@Override
 	public void init(ServletConfig theConfig) throws ServletException {
 		setApplication(new MyApplication());
 	}
-	
 	private class MyApplication implements ReceivingApplication {
 		public Message processMessage(Message theMessage, Map<String, Object> theMetadata) 
 				throws ReceivingApplicationException, HL7Exception {
@@ -48,7 +43,6 @@ public class Hl7_listener extends HohServlet {
 			}
 			return response;
 		}
-		
 		public boolean canProcess(Message theMessage) {
 			return true;
 		}
