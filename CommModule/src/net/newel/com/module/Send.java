@@ -2,6 +2,8 @@ package net.newel.com.module;
 
 import java.io.IOException;
 
+import android.content.Context;
+
 import ca.uhn.hl7v2.HL7Exception;
 import ca.uhn.hl7v2.hoh.api.DecodeException;
 import ca.uhn.hl7v2.hoh.api.EncodeException;
@@ -18,11 +20,17 @@ public class Send {
 	private String host = "localhost";
 	private int port = 8443;
 	private String uri = "/Server/Hl7_listener";
+	private Context context;
+	
+	public Send(Context c) {
+		this.context = c;
+	}
+	
 	public void sendMessage(ORU_R01 mess) throws HL7Exception {
 		HohRawClientSimple cli = new HohRawClientSimple(this.host, this.port, this.uri);
 
-		CustomCertificateTlsSocketFactory clientSocketFactory = new CustomCertificateTlsSocketFactory();
-		clientSocketFactory.setKeystoreFilename("/home/leo/workspace/TX/keystors/.truststore");
+		CustomCertificateTlsSocketFactory clientSocketFactory = new CustomCertificateTlsSocketFactory();		
+		clientSocketFactory.setKeystoreFilename(context.getFilesDir().getPath().toString()+"/.truststore");
 		clientSocketFactory.setKeystorePassphrase("e-Care");
 		cli.setSocketFactory(clientSocketFactory);
 		ISendable sendable = new MessageSendable(mess);
